@@ -1,0 +1,100 @@
+{
+  "test_cases": [
+    {
+      "id": "tc_001",
+      "description": "Simple technical question",
+      "input": "Explain blockchain technology",
+      "expected_context": "technical",
+      "expected_format": "detailed explanation"
+    },
+    {
+      "id": "tc_002", 
+      "description": "Educational step-by-step request",
+      "input": "Teach me how to cook pasta",
+      "expected_context": "educational",
+      "expected_format": "step-by-step guide"
+    },
+    {
+      "id": "tc_003",
+      "description": "Creative writing prompt",
+      "input": "Write a story about a time traveler",
+      "expected_context": "creative",
+      "expected_format": "essay format"
+    },
+    {
+      "id": "tc_004",
+      "description": "Comparison request",
+      "input": "Compare Python and JavaScript programming languages",
+      "expected_context": "analytical",
+      "expected_format": "comparative analysis"
+    },
+    {
+      "id": "tc_005",
+      "description": "Business strategy question",
+      "input": "How to increase sales for an online store?",
+      "expected_context": "business",
+      "expected_format": "summary"
+    },
+    {
+      "id": "tc_006",
+      "description": "General knowledge question",
+      "input": "What is artificial intelligence?",
+      "expected_context": "general",
+      "expected_format": "detailed explanation"
+    },
+    {
+      "id": "tc_007",
+      "description": "Complex technical question with specific format",
+      "input": "Explain machine learning algorithms in bullet points",
+      "expected_context": "technical",
+      "expected_format": "bullet points"
+    },
+    {
+      "id": "tc_008",
+      "description": "Code example request",
+      "input": "Show me how to implement a sorting algorithm in Python",
+      "expected_context": "technical",
+      "expected_format": "code example"
+    },
+    {
+      "id": "tc_009",
+      "description": "Table format request",
+      "input": "Compare different programming languages in a table format",
+      "expected_context": "analytical",
+      "expected_format": "table format"
+    },
+    {
+      "id": "tc_010",
+      "description": "Ambiguous prompt",
+      "input": "Help me with my project",
+      "expected_context": "general",
+      "expected_format": "detailed explanation"
+    }
+  ],
+  "edge_cases": [
+    {
+      "id": "ec_001",
+      "description": "Empty prompt",
+      "input": "",
+      "expected_behavior": "Handle gracefully with default values"
+    },
+    {
+      "id": "ec_002",
+      "description": "Very long prompt",
+      "input": "This is a very long prompt that contains multiple sentences and complex ideas. It tests the enhancer's ability to handle verbose input, extract key concepts, and maintain performance even with substantial text. The prompt includes technical terms, questions, and various formatting that might challenge the parsing algorithms. It also contains repetitive phrases and filler words that should be cleaned up during processing.",
+      "expected_behavior": "Process successfully with context extraction"
+    },
+    {
+      "id": "ec_003",
+      "description": "Prompt with special characters",
+      "input": "What is the @#$% difference between Python & JavaScript?",
+      "expected_behavior": "Clean special characters and process normally"
+    },
+    {
+      "id": "ec_004",
+      "description": "Multi-language prompt",
+      "input": "Explain machine learning (ML) y inteligencia artificial (IA)",
+      "expected_behavior": "Process English parts and ignore non-English"
+    }
+  ]
+}

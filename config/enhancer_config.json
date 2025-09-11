@@ -1,0 +1,84 @@
+{
+  "enhancer_settings": {
+    "version": "1.0.0",
+    "default_context": "general",
+    "default_output_format": "detailed explanation",
+    "max_prompt_length": 1000,
+    "min_prompt_length": 3,
+    "enable_logging": true,
+    "log_level": "INFO"
+  },
+  "context_keywords": {
+    "technical": [
+      "code", "programming", "algorithm", "software", "development",
+      "database", "api", "function", "variable", "debug", "compile",
+      "blockchain", "machine learning", "artificial intelligence", "data science"
+    ],
+    "educational": [
+      "explain", "teach", "learn", "understand", "concept", "tutorial",
+      "guide", "how to", "step by step", "education", "study"
+    ],
+    "creative": [
+      "write", "story", "poem", "creative", "imagine", "design",
+      "art", "music", "drawing", "painting", "fiction", "narrative"
+    ],
+    "analytical": [
+      "analyze", "compare", "evaluate", "assess", "critique", "review",
+      "pros and cons", "advantages", "disadvantages", "difference"
+    ],
+    "business": [
+      "strategy", "business", "marketing", "finance", "management",
+      "sales", "customer", "profit", "revenue", "startup", "leadership"
+    ]
+  },
+  "output_formats": [
+    {
+      "name": "detailed explanation",
+      "description": "Comprehensive explanation with examples",
+      "use_cases": ["technical", "educational", "general"]
+    },
+    {
+      "name": "bullet points",
+      "description": "Key points in bullet format",
+      "use_cases": ["educational", "analytical", "business"]
+    },
+    {
+      "name": "step-by-step guide",
+      "description": "Sequential instructions or process",
+      "use_cases": ["educational", "technical"]
+    },
+    {
+      "name": "comparative analysis",
+      "description": "Side-by-side comparison with pros/cons",
+      "use_cases": ["analytical", "business"]
+    },
+    {
+      "name": "summary",
+      "description": "Concise overview of main points",
+      "use_cases": ["business", "educational", "general"]
+    },
+    {
+      "name": "code example",
+      "description": "Code snippets with explanations",
+      "use_cases": ["technical"]
+    },
+    {
+      "name": "table format",
+      "description": "Structured data in table format",
+      "use_cases": ["analytical", "business", "technical"]
+    },
+    {
+      "name": "essay format",
+      "description": "Formal written composition",
+      "use_cases": ["creative", "educational", "analytical"]
+    }
+  ],
+  "solution_approaches": {
+    "technical": "Provide technical explanation with examples and best practices",
+    "educational": "Give clear, step-by-step explanation suitable for learning",
+    "creative": "Offer creative suggestions and examples",
+    "analytical": "Present detailed analysis with pros/cons and conclusions",
+    "business": "Focus on practical applications and business value",
+    "general": "Provide comprehensive information covering key aspects"
+  }
+}

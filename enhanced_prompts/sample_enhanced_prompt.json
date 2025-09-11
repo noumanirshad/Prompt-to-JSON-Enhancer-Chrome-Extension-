@@ -1,0 +1,16 @@
+{
+  "original_prompt": "Explain blockchain technology",
+  "enhanced_prompt": {
+    "context": "You are a technical expert specializing in blockchain and distributed systems.",
+    "problem": "Explain blockchain technology and how it works",
+    "expected_solution": "Provide a comprehensive technical explanation covering the fundamental concepts, how blockchain works, its key features (decentralization, immutability, consensus), use cases, and practical examples. Include technical details while keeping it accessible.",
+    "output_format": "detailed explanation with examples"
+  },
+  "metadata": {
+    "timestamp": "2024-01-15T10:30:00.000Z",
+    "enhancement_version": "1.0.0",
+    "processing_time": "0.045",
+    "detected_context": "technical",
+    "confidence_score": 0.95
+  }
+}

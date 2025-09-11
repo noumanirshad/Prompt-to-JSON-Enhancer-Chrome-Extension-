@@ -1,0 +1,96 @@
+{
+  "sample_prompts": [
+    {
+      "category": "Technical",
+      "prompts": [
+        "Explain blockchain technology",
+        "How do I write a Python function for data analysis?",
+        "What are the best practices for React development?",
+        "How does machine learning work?",
+        "Explain the difference between SQL and NoSQL databases"
+      ]
+    },
+    {
+      "category": "Educational",
+      "prompts": [
+        "Teach me about machine learning",
+        "Explain photosynthesis step by step",
+        "How does the stock market work?",
+        "What is the theory of relativity?",
+        "How do computers process information?"
+      ]
+    },
+    {
+      "category": "Creative",
+      "prompts": [
+        "Write a creative story about a robot",
+        "Create a poem about nature",
+        "Imagine a futuristic city",
+        "Design a logo for a tech startup",
+        "Write a song about friendship"
+      ]
+    },
+    {
+      "category": "Analytical",
+      "prompts": [
+        "Compare React and Vue.js",
+        "Analyze the pros and cons of remote work",
+        "Evaluate different marketing strategies",
+        "Compare iOS vs Android development",
+        "Analyze the impact of social media on society"
+      ]
+    },
+    {
+      "category": "Business",
+      "prompts": [
+        "Create a marketing strategy for a startup",
+        "How to improve customer retention?",
+        "What are effective leadership techniques?",
+        "How to build a successful team?",
+        "What are the key metrics for measuring business success?"
+      ]
+    },
+    {
+      "category": "General",
+      "prompts": [
+        "What is artificial intelligence?",
+        "Tell me about climate change",
+        "How to be more productive?",
+        "What are the benefits of exercise?",
+        "Explain the concept of time management"
+      ]
+    }
+  ],
+  "expected_outputs": {
+    "technical_context": {
+      "context": "technical",
+      "expected_solution": "Provide technical explanation with examples and best practices",
+      "output_format": "detailed explanation"
+    },
+    "educational_context": {
+      "context": "educational", 
+      "expected_solution": "Give clear, step-by-step explanation suitable for learning",
+      "output_format": "step-by-step guide"
+    },
+    "creative_context": {
+      "context": "creative",
+      "expected_solution": "Offer creative suggestions and examples",
+      "output_format": "essay format"
+    },
+    "analytical_context": {
+      "context": "analytical",
+      "expected_solution": "Present detailed analysis with pros/cons and conclusions",
+      "output_format": "comparative analysis"
+    },
+    "business_context": {
+      "context": "business",
+      "expected_solution": "Focus on practical applications and business value",
+      "output_format": "summary"
+    },
+    "general_context": {
+      "context": "general",
+      "expected_solution": "Provide comprehensive information covering key aspects",
+      "output_format": "detailed explanation"
+    }
+  }
+}
