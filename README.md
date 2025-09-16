@@ -106,6 +106,55 @@ prompt-to-json-enhancer/
    jupyter notebook test_prompt_enhancer.ipynb
    ```
 
+## 🧰 Backend API (FastAPI + Gemini)
+
+### Configure Environment
+
+Create a `.env` file in the project root:
+
+```
+GEMINI_API_KEY=your_gemini_key_here
+```
+
+### Install and Run Backend
+
+```bash
+pip install -r requirements.txt
+uvicorn backend.api.server:app --reload --port 8000
+```
+
+Endpoints:
+- `GET /health` → health status and Gemini availability
+- `POST /enhance` → body `{ "prompt": "..." }` returns structured JSON
+
+Example request:
+
+```bash
+curl -s -X POST http://localhost:8000/enhance \
+ -H "Content-Type: application/json" \
+ -d '{"prompt":"Explain blockchain"}' | jq
+```
+
+If the Gemini key is missing, the API falls back to the local heuristic analyzer.
+
+## 🧩 Chrome Extension (Manifest V3)
+
+Files under `chrome_extension/`:
+- `manifest.json` – Extension manifest (MV3)
+- `popup.html`, `popup.css`, `popup.js` – Popup UI to send prompts to backend
+- `content.js` – Captures text from AI sites and reinserts enhanced JSON
+- `service_worker.js` – Initializes defaults (placeholder for future features)
+
+### Load in Chrome
+1. Open `chrome://extensions`
+2. Enable Developer mode
+3. Click “Load unpacked” and select the `chrome_extension/` folder
+4. Click the extension icon → set Backend URL (default `http://localhost:8000`)
+5. Type/paste a prompt or click “Capture from page”
+6. Click “Enhance” → copy or “Reinsert to page”
+
+Supported sites (initial selectors): ChatGPT, Claude, Gemini (generic selectors).
+
 ### Basic Usage
 
 ```python

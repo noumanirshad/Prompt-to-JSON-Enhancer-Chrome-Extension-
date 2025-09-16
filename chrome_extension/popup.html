@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompt-to-JSON Enhancer</title>
+  <link rel="stylesheet" href="popup.css" />
+ </head>
+<body>
+  <header>
+    <img src="icons/icon48.png" alt="logo" />
+    <h1>Prompt-to-JSON</h1>
+  </header>
+
+  <section class="settings">
+    <label for="backendUrl">Backend URL</label>
+    <input id="backendUrl" type="text" placeholder="http://localhost:8000" />
+    <button id="saveSettings" class="secondary">Save</button>
+  </section>
+
+  <section>
+    <label for="promptInput">Prompt</label>
+    <textarea id="promptInput" rows="4" placeholder="Type or paste your prompt..."></textarea>
+
+    <div class="actions">
+      <button id="captureBtn">Capture from page</button>
+      <button id="enhanceBtn" class="primary">Enhance</button>
+    </div>
+  </section>
+
+  <section>
+    <label for="jsonOutput">Enhanced JSON</label>
+    <textarea id="jsonOutput" rows="10" readonly></textarea>
+
+    <div class="actions">
+      <button id="copyBtn">Copy JSON</button>
+      <button id="reinjectBtn" class="secondary">Reinsert to page</button>
+    </div>
+  </section>
+
+  <footer>
+    <small>Powered by Gemini + local heuristics</small>
+  </footer>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
+
+

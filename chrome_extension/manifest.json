@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Prompt-to-JSON Enhancer",
+  "version": "1.0.0",
+  "description": "Transform plain prompts into structured JSON using Gemini backend.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "Prompt-to-JSON Enhancer",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage", "clipboardWrite", "activeTab", "scripting"],
+  "host_permissions": ["http://localhost:8000/*", "https://*/*"],
+  "background": {
+    "service_worker": "service_worker.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.openai.com/*",
+        "https://claude.ai/*",
+        "https://gemini.google.com/*",
+        "https://*.google.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
+
+
