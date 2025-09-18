@@ -13,7 +13,12 @@
     "default_popup": "popup.html"
   },
   "permissions": ["storage", "clipboardWrite", "activeTab", "scripting"],
-  "host_permissions": ["http://localhost:8000/*", "https://*/*"],
+  "host_permissions": [
+    "https://prompt-to-json-enhancer.onrender.com/*",
+    "https://chat.openai.com/*",
+    "https://claude.ai/*",
+    "https://gemini.google.com/*"
+  ],
   "background": {
     "service_worker": "service_worker.js",
     "type": "module"
