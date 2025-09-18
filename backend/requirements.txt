@@ -1,0 +1,37 @@
+# Prompt-to-JSON Enhancer Requirements
+# Core Python packages for the backend functionality
+
+# Data manipulation and analysis
+pandas>=1.5.0
+numpy>=1.21.0
+
+# JSON handling and file operations
+json5>=0.9.0
+
+# Logging and debugging
+loguru>=0.6.0
+
+# Testing framework
+pytest>=7.0.0
+pytest-cov>=4.0.0
+
+# Jupyter notebook support
+jupyter>=1.0.0
+ipykernel>=6.0.0
+
+# Development tools
+black>=22.0.0
+flake8>=5.0.0
+mypy>=0.991
+
+# API backend
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+pydantic>=2.5.0
+python-dotenv>=1.0.0
+google-generativeai>=0.7.0
+
+# Optional: For enhanced text processing
+nltk>=3.7
+spacy>=3.4.0
+textblob>=0.17.0
