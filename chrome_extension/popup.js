@@ -13,7 +13,7 @@ const els = {
 };
 
 // Load stored backend URL or default
-chrome.storage.sync.get({ backendUrl: 'http://localhost:8000' }, (cfg) => {
+chrome.storage.sync.get({ backendUrl: 'https://prompt-to-json-enhancer.onrender.com' }, (cfg) => {
   els.backendUrl.value = cfg.backendUrl;
 });
 
